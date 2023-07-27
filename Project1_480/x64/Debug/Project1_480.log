@@ -1,2 +1,4 @@
 ﻿  driver.cpp
+C:\Users\Austin\source\repos\Project1_480\Project1_480\TTH_HASH_FUNCTS.h(84,37): warning C4244: '=': conversion from 'unsigned __int64' to 'double', possible loss of data
+C:\Users\Austin\source\repos\Project1_480\Project1_480\TTH_HASH_FUNCTS.h(100,37): warning C4244: '=': conversion from 'unsigned __int64' to 'double', possible loss of data
   Project1_480.vcxproj -> C:\Users\Austin\source\repos\Project1_480\x64\Debug\Project1_480.exe
