@@ -20,7 +20,9 @@
 using namespace std;
 
 int LetterToNumber(char);
-vector<vector<char>> CreateBlocks(string, int*);
+void RemoveGarbage(string&);
+vector<vector<char>> CreateBlocks(string);
+void ComputeHash(vector<vector<int>>);
 
 //method to convert the letter to a number
 int LetterToNumber(char letter)
@@ -58,24 +60,30 @@ int LetterToNumber(char letter)
 	return letterIndex;
 }
 
-vector<vector<char>> CreateBlocks(string message, int * blocks)
+void RemoveGarbage(string& message)
 {
-	double numberOfBlocks;
+	//remove anything that isn't an alphabetic character
+	for (int i = 0; i < message.length(); i++)
+	{
+		if (message[i] < 'A' || message[i] > 'Z' && message[i] < 'a'
+			|| message[i] > 'z') {
+
+			message.erase(i, 1);
+			i--;
+		}
+	}
+}
+
+vector<vector<char>> CreateBlocks(string message)
+{
+	int numberOfBlocks;
 	int index = 0;
 	vector<vector<char>> blockCollection;
 	vector<char> block;
 	
 	/*remove anything that isn't 
 	an alphabetic char from the message*/
-	for (int i = 0; i < message.length(); i++)
-	{
-		if (message[i] < 'a' || message[i] < 'A' 
-			|| message[i] > 'z' || message[i] > 'Z')
-		{
-			message.erase(i, 1); 
-			i--;
-		}
-	}
+
 
 	//even count of blocks w/o need for nulls
 	if (message.size() % 8 == 0)
@@ -124,3 +132,21 @@ vector<vector<char>> CreateBlocks(string message, int * blocks)
 
 	return blockCollection;
 }
+
+void ComputeHash(vector<vector<char>> blockCollection)
+{
+	int numberOfBlocks; 
+
+	numberOfBlocks = blockCollection.size();
+
+	//for n number of blocks, do two rounds n times
+	for (int i = 0; i < numberOfBlocks; i++)
+	{
+
+		for (int k = 0; k < 16; k++)
+		{
+			
+		}
+	}
+}
+

@@ -1,4 +1,6 @@
 ﻿  driver.cpp
-C:\Users\Austin\source\repos\Project1_480\Project1_480\TTH_HASH_FUNCTS.h(84,37): warning C4244: '=': conversion from 'unsigned __int64' to 'double', possible loss of data
-C:\Users\Austin\source\repos\Project1_480\Project1_480\TTH_HASH_FUNCTS.h(100,37): warning C4244: '=': conversion from 'unsigned __int64' to 'double', possible loss of data
-  Project1_480.vcxproj -> C:\Users\Austin\source\repos\Project1_480\x64\Debug\Project1_480.exe
+C:\Users\Austin\source\repos\TTH_HASH_GEN\Project1_480\TTH_HASH_FUNCTS.h(92,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Austin\source\repos\TTH_HASH_GEN\Project1_480\TTH_HASH_FUNCTS.h(109,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Austin\source\repos\TTH_HASH_GEN\Project1_480\TTH_HASH_FUNCTS.h(111,25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Austin\source\repos\TTH_HASH_GEN\Project1_480\TTH_HASH_FUNCTS.h(140,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Project1_480.vcxproj -> C:\Users\Austin\source\repos\TTH_HASH_GEN\x64\Debug\Project1_480.exe
